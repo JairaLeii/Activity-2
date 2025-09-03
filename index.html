@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Disney Movies Gallery</title>
+  
+  <!-- Font Link Added -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Bodoni Moda", Arial, sans-serif;
+      background: url('https://i.pinimg.com/1200x/28/58/1d/28581da226a7146b777ae4fd3f99f5c8.jpg') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #000; /* Black font */
+    }
+
+    .header {
+      text-align: center;
+      padding: 20px;
+      font-size: 36px;
+      font-family: 'Brush Script MT', cursive;
+      font-weight: bold;
+      margin-top: 40px;
+      color: #000; /* Black font */
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(4, 160px);
+      grid-template-rows: repeat(3, 220px);
+      gap: 0;
+      margin-top: 30px;
+      background: transparent;
+    }
+
+    .frame {
+      border: 2px solid #00f; /* Blue border */
+      padding: 4px;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Positions */
+    .s1 { grid-column: 1; grid-row: 1; }
+    .s2 { grid-column: 2; grid-row: 1; }
+    .s3 { grid-column: 3; grid-row: 1; }
+    .s4 { grid-column: 4; grid-row: 1; }
+
+    .s5 { grid-column: 1; grid-row: 2; }
+    .s6 { grid-column: 2; grid-row: 2; }
+    .s7 { grid-column: 1; grid-row: 3; }
+    .s8 { grid-column: 2; grid-row: 3; }
+
+    .big { grid-column: 3 / 5; grid-row: 2 / 4; }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    💫 Disney Movies Collection 💫
+  </div>
+
+  <div class="gallery">
+    <div class="frame s1"><img src="https://i.pinimg.com/736x/74/f6/87/74f687c316ea2304bc42611f818495f2.jpg" alt="Poster 1"></div>
+    <div class="frame s2"><img src="https://i.pinimg.com/736x/cd/f0/2f/cdf02fbb3554e09507bad8789e238b26.jpg" alt="Poster 2"></div>
+    <div class="frame s3"><img src="https://i.pinimg.com/736x/46/7f/18/467f18f31c9b59268bd9889b1484c06c.jpg" alt="Poster 3"></div>
+    <div class="frame s4"><img src="https://i.pinimg.com/736x/08/11/16/081116fb6ffe8399efd505e387f885fe.jpg" alt="Poster 4"></div>
+    <div class="frame s5"><img src="https://i.pinimg.com/736x/b6/c5/3c/b6c53c0260a898e1f29a32bb865e0c33.jpg" alt="Poster 5"></div>
+    <div class="frame s6"><img src="https://i.pinimg.com/736x/8e/a5/05/8ea505a3b34f3dbc541b501e33ee0754.jpg" alt="Poster 6"></div>
+    <div class="frame s7"><img src="https://i.pinimg.com/1200x/42/1f/e6/421fe6719623db93313634565b4d31ad.jpg" alt="Poster 7"></div>
+    <div class="frame s8"><img src="https://i.pinimg.com/736x/a8/14/f4/a814f444f949024be486f04b9b25a983.jpg" alt="Poster 8"></div>
+    <div class="frame big"><img src="https://i.pinimg.com/1200x/eb/87/c6/eb87c6d691f2eb32f3c5a583ef47449e.jpg" alt="Big Poster"></div>
+  </div>
+
+</body>
+</html>
